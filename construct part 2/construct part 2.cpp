@@ -16,4 +16,7 @@ public:
 	static void setNim(int pNim) { nim = pNim; /*Definisi Function"*/ }
 	static int getNim() { return nim; /*Definisi Function*/ }
 
-	Mahasiswa(string pnama) :nama(pnama) {	setID()	};
+	mahasiswa(string pnama) :nama(pnama) {	setID();	}
+};
+
+int Mahasiswa::nim = 0;
