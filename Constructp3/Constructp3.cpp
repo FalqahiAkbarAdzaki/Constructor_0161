@@ -7,20 +7,21 @@ private:
 	int nim;
 	string nama;
 public:
-	Mahasiswa();
-	Mahasiswa(int);
+	Mahasiswa()
+	{
+		nim = 161;
+		nama = " ";
+	}
+	
+	Mahasiswa(int iNim)
+	{
+		nim = iNim;
+	}
+
 	Mahasiswa(string);
 	Mahasiswa(int iNim, string iNama);
 	void cetak();
 };
-
-Mahasiswa::Mahasiswa() {
-	nim = 161;
-	nama = "";
-}
-Mahasiswa::Mahasiswa(int iNim) {
-	nim = iNim;
-}
 
 Mahasiswa::Mahasiswa(string iNama) {
 	nim = 161;
@@ -37,5 +38,8 @@ void Mahasiswa::cetak() {
 }
 
 int main() {
-
+	Mahasiswa mhs1;
+	Mahasiswa mhs2(20);
+	Mahasiswa mhs3("Indra");
+	Mahasiswa mhs4(30, "Fauzan");
 }
