@@ -40,5 +40,7 @@ int main() {
 	mhs3.printAll();
 	mhs4.printAll();
 
-	system
+	system("pause");
+
+	return 0;
 }
